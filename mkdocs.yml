@@ -16,10 +16,11 @@ plugins:
 theme: 
   name: material
   custom_dir: overrides
-  logo: images/Discourse_Bridge.webp
+  logo: https://aosus.org/wp-content/uploads/2021/09/aosus-w-lwogores.png
   icon:
     repo: fontawesome/brands/github
   font: false
+  language: ar
   features:
     - search.suggest 
     - search.highlight
@@ -48,15 +49,6 @@ theme:
 
 
 extra:
-  alternate:
-    - name: English
-      link: /
-      lang: en
-
-    - name: العربية
-      link: /ar/ 
-      lang: ar
-
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/aosus
