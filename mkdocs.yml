@@ -70,4 +70,11 @@ extra_css:
   - extra.css
 
 nav:
-  - الرئيسية: "index.md" 
+  - الرئيسية: "index.md"
+  - البوابة العامة للتوطين:
+    - مقدمة: "localization/index.md"
+    - العولمة: "localization/i18n.md"
+    - التوطين: "localization/l10n.md"
+  - بوابة المشاريع:
+    - مقدمة: "projects/index.md"
+    - مشروع GNOME: "projects/gnome.md"
