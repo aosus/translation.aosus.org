@@ -8,4 +8,4 @@
 
 قائمة المشاريع:
 
-- [GNOME](gnome/index.md)
+- [GNOME](gnome.md)
