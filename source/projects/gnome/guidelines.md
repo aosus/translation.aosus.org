@@ -2,10 +2,38 @@
 !!! warning "الصفحة قيد الإنشاء"
 
     لا تزال هذه الصفحة قيد الإنشاء. زر الموقع بشكل دوريّ من أجل رؤية آخر التعديلات والتحديثات.
+## الصيغ
+
+### مربع حوار التحذير «Alert Dialog»
+تَعرض **مربعات حوار التحذير** رسالة أو سؤالًا مصحوبة بما بين زر واحد وثلاثة أزرار للاستجابة، وتستخدم عندما يكون من الضروري أن يرى المستخدم رسالة ما ويستجيب لها. في مربعات الحوار هذه، المستخدم هو القائم بالفعل وليست البرمجية بذاتها، لذا ينبغي أن تُوجَّه إليه الاستفهاماتُ بصيغة المخاطب: «ستفعلُ كذا؟»، وليس بصيغة المتكلم: «أأفعل كذا؟».<sup><a href="https://bethaitman.com/posts/ui-writing/confirmation/"><small>[م1]</small></a></sup>
+
+| <p style="text-align:center;">اللغة الإنجليزية</p> | <p style="text-align:center;">اللغة العربية (صيغة المتكلم) ❌</p> | <p style="text-align:center;">اللغة العربية (صيغة المخاطب) ☑️</p> |
+|---------------|---------------|---------------|
+| ![](/resources/projects/gnome/guidelines/save-dialog-1-en-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-1-en-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-2-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-2-ar-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-light.png#only-light) |
+| <p style="text-align:center;"><span dir="ltr">Save Changes?</span></p> | <p style="text-align:center;">أأحفظ التغييرات؟</p> | <p style="text-align:center;">سَتَحفَظُ التغييرات؟</p> |
+
+### المبدِّلات «Switches»
+تستخدم المبدِّلات للتحكم في الميزات أو الإعدادات أو الأجهزة التي تحوي على منطق واضح للتشغيل والإيقاف. تشبه المبدِّلات أدوات التحكم في العالم الحقيقي، ويمكن استخدام هذا التشابه كمرجع لتحديد متى ينبغي استخدامها.يستخدم المفتاح التبديلي للتحكم في الخيارات ذات الطبيعة الثنائية الواضحة حصرًا.
+
+تُكتب تسميات المبدِّلات بصيغة الاسم وليس فعل الأمر، فنقول «الحفظ التلقائي» وليس «احفظ تلقائيًا».<sup><a href="https://developer.gnome.org/hig/patterns/controls/switches.html"><small>[م2]</small></a></sup>
+
+| <p style="text-align:center;">اللغة الإنجليزية</p> | <p style="text-align:center;">اللغة العربية (صيغة فعل الأمر) ❌</p> | <p style="text-align:center;">اللغة العربية (صيغة الاسم) ☑️</p> |
+|---------------|---------------|---------------|
+| ![](/resources/projects/gnome/guidelines/auto-save-switch-1-en-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/auto-save-switch-1-en-light.png#only-light) | ![](/resources/projects/gnome/guidelines/auto-save-switch-2-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/auto-save-switch-2-ar-light.png#only-light) | ![](/resources/projects/gnome/guidelines/auto-save-switch-3-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/auto-save-switch-3-ar-light.png#only-light) |
+| <p style="text-align:center;"><span dir="ltr">Auto Save</span></p> | <p style="text-align:center;">احفظ تلقائيًا</p> | <p style="text-align:center;">الحفظ التلقائي</p> |
+
+### الأزرار «Buttons»
+الأزرار هي واحدة من أبسط ركائز واجهة المستخدم، ونستخدم صيغة فعل الأمر فيها.<sup><a href="https://developer.gnome.org/hig/patterns/controls/buttons.html"><small>[م3]</small></a></sup>
+
+| <p style="text-align:center;">اللغة الإنجليزية</p> | <p style="text-align:center;">اللغة العربية (صيغة الاسم) ❌</p> | <p style="text-align:center;">اللغة العربية (صيغة فعل الأمر) ☑️</p> |
+|---------------|---------------|---------------|
+| ![](/resources/projects/gnome/guidelines/save-dialog-1-en-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-1-en-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-4-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-4-ar-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-light.png#only-light) |
+| <p style="text-align:center;"><span dir="ltr">Save/Discard/Cancel</span></p> | <p style="text-align:center;">حفظ\إهمال\إلغاء</p> | <p style="text-align:center;">احفظ\أهمل\ألغِ</p> |
+
 ## التاريخ والوقت
 يستخدم جنوم دالة ```g_date_time_format``` لتوطين التاريخ والوقت، وهي تعتمد على متغيِّرات تنسيق مستمدة من ```strftime()``` لتحقيق ذلك. ستجد أدناه جدول التحويلات الذي ينبغي استخدامه عند الترجمة إلى اللغة العربية.
 
-تذكر أنه يجب إجراء بعض التعديلات الأخرى، كتغيير مواضع الحقول واستخدام الفاصلة الصحيحة. على سبيل المثال، تُحوَّل الصيغة <span dir="ltr">```%a %b %e, %l:%M:%S %p```</span> إلى <span dir="ltr">```%A، %Oe %Ob، %Ol:%OM:%OS %P```</span> (لاحظ استخدام الفاصلة العربية ،).
+تذكر أنه يجب إجراء بعض التعديلات الأخرى، كتغيير مواضع الحقول واستخدام الفاصلة الصحيحة. على سبيل المثال، تُحوَّل الصيغة <span dir="ltr">```%a %b %e, %l:%M:%S %p```</span> إلى <span dir="ltr">```%A، %Oe %Ob، %Ol:%OM:%OS %P```</span> (لاحظ استخدام الفاصلة العربية ،).<sup><a href="https://archive.ph/h7I8Q#selection-125.0-125.4"><small>[م4]</small></a></sup>
 
 | الرمز | مقابله عند الترجمة        | الوصف                                                              | أمثلة |
 |-------------|----------------|--------------------------------------------------------------------|----|
@@ -46,3 +74,10 @@
 | %z          | %z             | فارق التوقيت عن التوقيت العالمي المنسق (UTC)             | +0300
 | %Z          | %Z             | اسم المنطقة الزمنية أو اختصارها                                     | +03
 
+## المراجع
+<ol>
+  <li><a href="https://bethaitman.com/posts/ui-writing/confirmation/">Are you sure? How to write a confirmation dialog - Beth Aitman</a></li>
+  <li><a href="https://developer.gnome.org/hig/patterns/controls/switches.html">Switches - GNOME Human Interface Guidelines</a></li>
+  <li><a href="https://developer.gnome.org/hig/patterns/controls/buttons.html">Buttons - GNOME Human Interface Guidelines</a></li>
+  <li><a href="https://archive.ph/h7I8Q#selection-125.0-125.4">Misc Gnome Stuff - Arabeyes Wiki</a></li>
+</ol> 
