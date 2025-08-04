@@ -8,6 +8,7 @@ docs_dir: source
 plugins:
   - autolinks
   - search
+  - glightbox
   - git-revision-date-localized:
       type: timeago
   - minify:
