@@ -35,7 +35,7 @@ theme:
     scheme: default
     toggle:
       icon: material/brightness-7
-      name: Switch to dark mode
+      name: بدِّل إلى الوضع الداكن
     primary: green
     accent: blue
 
@@ -44,7 +44,7 @@ theme:
     scheme: slate
     toggle:
       icon: material/brightness-4
-      name: Switch to light mode
+      name: بدِّل إلى الوضع الفاتح
     primary: green
     accent: blue
 
@@ -77,7 +77,6 @@ markdown_extensions:
 extra_css:
   - extra.css
 
-nav:
 nav:
   - الرئيسية: index.md
 
