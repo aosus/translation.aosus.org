@@ -13,11 +13,11 @@
 | <p style="text-align:center;"><span dir="ltr">Save Changes?</span></p> | <p style="text-align:center;">أأحفظ التغييرات؟</p> | <p style="text-align:center;">سَتَحفَظُ التغييرات؟</p> |
 
 ### المبدِّلات «Switches»
-تستخدم المبدِّلات للتحكم في الميزات أو الإعدادات أو الأجهزة التي تحوي على منطق واضح للتشغيل والإيقاف. تشبه المبدِّلات أدوات التحكم في العالم الحقيقي، ويمكن استخدام هذا التشابه كمرجع لتحديد متى ينبغي استخدامها.يستخدم المفتاح التبديلي للتحكم في الخيارات ذات الطبيعة الثنائية الواضحة حصرًا.
+تستخدم المبدِّلات للتحكم في الميزات أو الإعدادات أو الأجهزة التي تحوي على منطق واضح للتشغيل والإيقاف. تشبه المبدِّلات أدوات التحكم في العالم الحقيقي، ويمكن استخدام هذا التشابه كمرجع لتحديد متى ينبغي استخدامها.
 
-تُكتب تسميات المبدِّلات بصيغة الاسم وليس فعل الأمر، فنقول «الحفظ التلقائي» وليس «احفظ تلقائيًا».<sup><a href="https://developer.gnome.org/hig/patterns/controls/switches.html"><small>[م2]</small></a></sup>
+تُكتب تسميات المبدِّلات بصيغة المصدر وليس فعل الأمر، فنقول «الحفظ التلقائي» وليس «احفظ تلقائيًا».<sup><a href="https://developer.gnome.org/hig/patterns/controls/switches.html"><small>[م2]</small></a></sup>
 
-| <p style="text-align:center;">اللغة الإنجليزية</p> | <p style="text-align:center;">اللغة العربية (صيغة فعل الأمر) ❌</p> | <p style="text-align:center;">اللغة العربية (صيغة الاسم) ☑️</p> |
+| <p style="text-align:center;">اللغة الإنجليزية</p> | <p style="text-align:center;">اللغة العربية (صيغة فعل الأمر) ❌</p> | <p style="text-align:center;">اللغة العربية (صيغة المصدر) ☑️</p> |
 |---------------|---------------|---------------|
 | ![](/resources/projects/gnome/guidelines/auto-save-switch-1-en-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/auto-save-switch-1-en-light.png#only-light) | ![](/resources/projects/gnome/guidelines/auto-save-switch-2-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/auto-save-switch-2-ar-light.png#only-light) | ![](/resources/projects/gnome/guidelines/auto-save-switch-3-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/auto-save-switch-3-ar-light.png#only-light) |
 | <p style="text-align:center;"><span dir="ltr">Auto Save</span></p> | <p style="text-align:center;">احفظ تلقائيًا</p> | <p style="text-align:center;">الحفظ التلقائي</p> |
@@ -25,13 +25,36 @@
 ### الأزرار «Buttons»
 الأزرار هي واحدة من أبسط ركائز واجهة المستخدم، ونستخدم صيغة فعل الأمر فيها.<sup><a href="https://developer.gnome.org/hig/patterns/controls/buttons.html"><small>[م3]</small></a></sup>
 
-| <p style="text-align:center;">اللغة الإنجليزية</p> | <p style="text-align:center;">اللغة العربية (صيغة الاسم) ❌</p> | <p style="text-align:center;">اللغة العربية (صيغة فعل الأمر) ☑️</p> |
+| <p style="text-align:center;">اللغة الإنجليزية</p> | <p style="text-align:center;">اللغة العربية (صيغة المصدر) ❌</p> | <p style="text-align:center;">اللغة العربية (صيغة فعل الأمر) ☑️</p> |
 |---------------|---------------|---------------|
 | ![](/resources/projects/gnome/guidelines/save-dialog-1-en-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-1-en-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-4-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-4-ar-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-light.png#only-light) |
 | <p style="text-align:center;"><span dir="ltr">Save/Discard/Cancel</span></p> | <p style="text-align:center;">حفظ\إهمال\إلغاء</p> | <p style="text-align:center;">احفظ\أهمل\ألغِ</p> |
 
+
+### أشرطة النوافذ
+لا نستخدم صيغة الفعل في أشرطة النوافذ.
+
+| <p style="text-align:center;">اللغة العربية (صيغة الفعل) ❌</p> | <p style="text-align:center;">اللغة العربية ☑️</p> |
+|---------------|---------------|
+| ![](/resources/projects/gnome/guidelines/add-account-1-dark.png#only-dark) ![](/resources/projects/gnome/guidelines//add-account-1-light.png#only-light) | ![](/resources/projects/gnome/guidelines//add-account-2-dark.png#only-dark) ![](/resources/projects/gnome/guidelines//add-account-2-light.png#only-light) |
+| <p style="text-align:center;">أضِف حسابًا</p> | <p style="text-align:center;">إضافة حساب</p> |
+
+### أظهر\اعرض
+إذا كان أي من هذه الأفعال مع:
+
+* البرمجيات وأجزائها كالقوائم والنوافذ والشريط الجانبي وغيرهم، فنستعمل «أظهر» أو «اطَّلع».
+* المحتوى كالصور والمستندات والفيديوهات والعروض التقديمية وغيرهم، فنستعمل «اعرض».
+
+| <p style="text-align:center;">أظهر</p> | <p style="text-align:center;">اعرض</p> |
+|---------------|---------------|
+| ![](/resources/projects/gnome/guidelines/display-sidebar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/display-sidebar-light.png#only-light) | ![](/resources/projects/gnome/guidelines/display-video-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/display-video-light.png#only-light) |
+| <p style="text-align:center;">أظهر الشريط الجانبي</p> | <p style="text-align:center;">اعرض الفيديو</p> |
+
+### اختصارات لوحة المفاتيح
+نكتب الاختصارات بصيغة فعل الأمر.
+
 ### مدخلات «gschema»
-تَكثُر في تطبيقات جنوم مدخلات تتضمّن مُعرِّف «gschema»، وهي مدخلات ذات أهمية ضئيلة، إذ لا تظهر في واجهة المستخدم الرئيسية، وننصح بشدة بتركها وعدم ترجمتها.
+تَكثُر في تطبيقات جنوم مدخلات تتضمن مُعرِّف «gschema»، وهي مدخلات ذات أهمية ضئيلة، إذ لا تظهر في واجهة المستخدم الرئيسية، وننصح بشدة بتركها وعدم ترجمتها.
 
 يَشيع في توصيف هذه الإعدادات أسلوب كعبارة  «Whether to enable or disable this feature»، والتي تترجم أحيانًا ترجمة حرفية ركيكة إلى صياغات من قبيل: «فيما إذا تُفعَّل أو تُعطَّل هذه الميزة»، وهذا أسلوب خاطئ، فالصواب أن تُصاغ الجملة على هيئة استفهام، فتكون: «أتُفعَّل هذه الميزة أم تُعطَّل؟».<sup><a href="https://archive.ph/ZpotO"><small>[م4]</small></a></sup>
 
@@ -78,6 +101,8 @@
 | %Y          | %OY            | السنة                                                              | 2020
 | %z          | %z             | فارق التوقيت عن التوقيت العالمي المنسق (UTC)             | +0300
 | %Z          | %Z             | اسم المنطقة الزمنية أو اختصارها                                     | +03
+
+تستعمل بعض البرمجيات محرف النسبة «∶» (```U+2236 RATIO```) في التوقيت، ويلزم استبداله بمحرف النقطتين الرأسيتين «:» (```U+003A COLON```) وإلا فسيظهر التوقيت من اليمين إلى اليسار.
 
 ## المراجع
 <ol>
