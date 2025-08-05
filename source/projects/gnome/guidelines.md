@@ -30,10 +30,15 @@
 | ![](/resources/projects/gnome/guidelines/save-dialog-1-en-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-1-en-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-4-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-4-ar-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-light.png#only-light) |
 | <p style="text-align:center;"><span dir="ltr">Save/Discard/Cancel</span></p> | <p style="text-align:center;">حفظ\إهمال\إلغاء</p> | <p style="text-align:center;">احفظ\أهمل\ألغِ</p> |
 
+### مدخلات «gschema»
+تَكثُر في تطبيقات جنوم مدخلات تتضمّن مُعرِّف «gschema»، وهي مدخلات ذات أهمية ضئيلة، إذ لا تظهر في واجهة المستخدم الرئيسية، وننصح بشدة بتركها وعدم ترجمتها.
+
+يَشيع في توصيف هذه الإعدادات أسلوب كعبارة  «Whether to enable or disable this feature»، والتي تترجم أحيانًا ترجمة حرفية ركيكة إلى صياغات من قبيل: «فيما إذا تُفعَّل أو تُعطَّل هذه الميزة»، وهذا أسلوب خاطئ، فالصواب أن تُصاغ الجملة على هيئة استفهام، فتكون: «أتُفعَّل هذه الميزة أم تُعطَّل؟».<sup><a href="https://archive.ph/ZpotO"><small>[م4]</small></a></sup>
+
 ## التاريخ والوقت
 يستخدم جنوم دالة ```g_date_time_format``` لتوطين التاريخ والوقت، وهي تعتمد على متغيِّرات تنسيق مستمدة من ```strftime()``` لتحقيق ذلك. ستجد أدناه جدول التحويلات الذي ينبغي استخدامه عند الترجمة إلى اللغة العربية.
 
-تذكر أنه يجب إجراء بعض التعديلات الأخرى، كتغيير مواضع الحقول واستخدام الفاصلة الصحيحة. على سبيل المثال، تُحوَّل الصيغة <span dir="ltr">```%a %b %e, %l:%M:%S %p```</span> إلى <span dir="ltr">```%A، %Oe %Ob، %Ol:%OM:%OS %P```</span> (لاحظ استخدام الفاصلة العربية ،).<sup><a href="https://archive.ph/h7I8Q#selection-125.0-125.4"><small>[م4]</small></a></sup>
+تذكر أنه يجب إجراء بعض التعديلات الأخرى، كتغيير مواضع الحقول واستخدام الفاصلة الصحيحة. على سبيل المثال، تُحوَّل الصيغة <span dir="ltr">```%a %b %e, %l:%M:%S %p```</span> إلى <span dir="ltr">```%A، %Oe %Ob، %Ol:%OM:%OS %P```</span> (لاحظ استخدام الفاصلة العربية ،).<sup><a href="https://archive.ph/h7I8Q#selection-125.0-125.4"><small>[م5]</small></a></sup>
 
 | الرمز | مقابله عند الترجمة        | الوصف                                                              | أمثلة |
 |-------------|----------------|--------------------------------------------------------------------|----|
@@ -79,5 +84,6 @@
   <li><a href="https://bethaitman.com/posts/ui-writing/confirmation/">Are you sure? How to write a confirmation dialog - Beth Aitman</a></li>
   <li><a href="https://developer.gnome.org/hig/patterns/controls/switches.html">Switches - GNOME Human Interface Guidelines</a></li>
   <li><a href="https://developer.gnome.org/hig/patterns/controls/buttons.html">Buttons - GNOME Human Interface Guidelines</a></li>
+  <li><a href="https://archive.ph/ZpotO">لسان عربي – نزار شهاب الدين</a></li>
   <li><a href="https://archive.ph/h7I8Q#selection-125.0-125.4">Misc Gnome Stuff - Arabeyes Wiki</a></li>
 </ol> 
