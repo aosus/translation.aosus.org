@@ -5,12 +5,13 @@
 ## الصيغ
 
 ### مربع حوار التحذير «Alert Dialog»
-تَعرض **مربعات حوار التحذير** رسالة أو سؤالًا مصحوبة بما بين زر واحد وثلاثة أزرار للاستجابة، وتستخدم عندما يكون من الضروري أن يرى المستخدم رسالة ما ويستجيب لها. في مربعات الحوار هذه، المستخدم هو القائم بالفعل وليست البرمجية بذاتها، لذا ينبغي أن تُوجَّه إليه الاستفهاماتُ بصيغة المخاطب: «ستفعلُ كذا؟»، وليس بصيغة المتكلم: «أأفعل كذا؟».<sup><a href="https://bethaitman.com/posts/ui-writing/confirmation/"><small>[م1]</small></a></sup>
+<del>تَعرض **مربعات حوار التحذير** رسالة أو سؤالًا مصحوبة بما بين زر واحد وثلاثة أزرار للاستجابة، وتستخدم عندما يكون من الضروري أن يرى المستخدم رسالة ما ويستجيب لها. في مربعات الحوار هذه، المستخدم هو القائم بالفعل وليست البرمجية بذاتها، لذا ينبغي أن تُوجَّه إليه الاستفهاماتُ بصيغة المخاطب: «ستفعلُ كذا؟»، وليس بصيغة المتكلم: «أأفعل كذا؟».<sup><a href="https://bethaitman.com/posts/ui-writing/confirmation/"><small>[م1]</small></a></sup>
 
 | <p style="text-align:center;">اللغة الإنجليزية</p> | <p style="text-align:center;">اللغة العربية (صيغة المتكلم) ❌</p> | <p style="text-align:center;">اللغة العربية (صيغة المخاطب) ☑️</p> |
 |---------------|---------------|---------------|
 | ![](/resources/projects/gnome/guidelines/save-dialog-1-en-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-1-en-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-2-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-2-ar-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-light.png#only-light) |
 | <p style="text-align:center;"><span dir="ltr">Save Changes?</span></p> | <p style="text-align:center;">أأحفظ التغييرات؟</p> | <p style="text-align:center;">سَتَحفَظُ التغييرات؟</p> |
+</del>
 
 ### المبدِّلات «Switches»
 تستخدم المبدِّلات للتحكم في الميزات أو الإعدادات أو الأجهزة التي تحوي على منطق واضح للتشغيل والإيقاف. تشبه المبدِّلات أدوات التحكم في العالم الحقيقي، ويمكن استخدام هذا التشابه كمرجع لتحديد متى ينبغي استخدامها.
