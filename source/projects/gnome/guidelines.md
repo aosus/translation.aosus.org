@@ -4,19 +4,10 @@
     لا تزال هذه الصفحة قيد الإنشاء. زر الموقع بشكل دوريّ من أجل رؤية آخر التعديلات والتحديثات.
 ## الصيغ
 
-### مربع حوار التحذير «Alert Dialog»
-<del>تَعرض **مربعات حوار التحذير** رسالة أو سؤالًا مصحوبة بما بين زر واحد وثلاثة أزرار للاستجابة، وتستخدم عندما يكون من الضروري أن يرى المستخدم رسالة ما ويستجيب لها. في مربعات الحوار هذه، المستخدم هو القائم بالفعل وليست البرمجية بذاتها، لذا ينبغي أن تُوجَّه إليه الاستفهاماتُ بصيغة المخاطب: «ستفعلُ كذا؟»، وليس بصيغة المتكلم: «أأفعل كذا؟».<sup><a href="https://bethaitman.com/posts/ui-writing/confirmation/"><small>[م1]</small></a></sup>
-
-| <p style="text-align:center;">اللغة الإنجليزية</p> | <p style="text-align:center;">اللغة العربية (صيغة المتكلم) ❌</p> | <p style="text-align:center;">اللغة العربية (صيغة المخاطب) ☑️</p> |
-|---------------|---------------|---------------|
-| ![](/resources/projects/gnome/guidelines/save-dialog-1-en-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-1-en-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-2-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-2-ar-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-light.png#only-light) |
-| <p style="text-align:center;"><span dir="ltr">Save Changes?</span></p> | <p style="text-align:center;">أأحفظ التغييرات؟</p> | <p style="text-align:center;">سَتَحفَظُ التغييرات؟</p> |
-</del>
-
 ### المبدِّلات «Switches»
 تستخدم المبدِّلات للتحكم في الميزات أو الإعدادات أو الأجهزة التي تحوي على منطق واضح للتشغيل والإيقاف. تشبه المبدِّلات أدوات التحكم في العالم الحقيقي، ويمكن استخدام هذا التشابه كمرجع لتحديد متى ينبغي استخدامها.
 
-تُكتب تسميات المبدِّلات بصيغة المصدر وليس فعل الأمر، فنقول «الحفظ التلقائي» وليس «احفظ تلقائيًا».<sup><a href="https://developer.gnome.org/hig/patterns/controls/switches.html"><small>[م2]</small></a></sup>
+تُكتب تسميات المبدِّلات بصيغة المصدر وليس فعل الأمر، فنقول «الحفظ التلقائي» وليس «احفظ تلقائيًا».<sup><a href="https://developer.gnome.org/hig/patterns/controls/switches.html"><small>[م1]</small></a></sup>
 
 | <p style="text-align:center;">اللغة الإنجليزية</p> | <p style="text-align:center;">اللغة العربية (صيغة فعل الأمر) ❌</p> | <p style="text-align:center;">اللغة العربية (صيغة المصدر) ☑️</p> |
 |---------------|---------------|---------------|
@@ -24,7 +15,7 @@
 | <p style="text-align:center;"><span dir="ltr">Auto Save</span></p> | <p style="text-align:center;">احفظ تلقائيًا</p> | <p style="text-align:center;">الحفظ التلقائي</p> |
 
 ### الأزرار «Buttons»
-الأزرار هي واحدة من أبسط ركائز واجهة المستخدم، ونستخدم صيغة فعل الأمر فيها.<sup><a href="https://developer.gnome.org/hig/patterns/controls/buttons.html"><small>[م3]</small></a></sup>
+الأزرار هي واحدة من أبسط ركائز واجهة المستخدم، ونستخدم صيغة فعل الأمر فيها.<sup><a href="https://developer.gnome.org/hig/patterns/controls/buttons.html"><small>[م2]</small></a></sup>
 
 | <p style="text-align:center;">اللغة الإنجليزية</p> | <p style="text-align:center;">اللغة العربية (صيغة المصدر) ❌</p> | <p style="text-align:center;">اللغة العربية (صيغة فعل الأمر) ☑️</p> |
 |---------------|---------------|---------------|
@@ -60,12 +51,12 @@
 ### مدخلات «gschema»
 تَكثُر في تطبيقات جنوم مدخلات تتضمن مُعرِّف «gschema»، وهي مدخلات ذات أهمية ضئيلة، إذ لا تظهر في واجهة المستخدم الرئيسية، وننصح بشدة بتركها وعدم ترجمتها.
 
-يَشيع في توصيف هذه الإعدادات أسلوب كعبارة  «Whether to enable or disable this feature»، والتي تترجم أحيانًا ترجمة حرفية ركيكة إلى صياغات من قبيل: «فيما إذا تُفعَّل أو تُعطَّل هذه الميزة»، وهذا أسلوب خاطئ، فالصواب أن تُصاغ الجملة على هيئة استفهام، فتكون: «أتُفعَّل هذه الميزة أم تُعطَّل؟».<sup><a href="https://archive.ph/ZpotO"><small>[م4]</small></a></sup>
+يَشيع في توصيف هذه الإعدادات أسلوب كعبارة  «Whether to enable or disable this feature»، والتي تترجم أحيانًا ترجمة حرفية ركيكة إلى صياغات من قبيل: «فيما إذا تُفعَّل أو تُعطَّل هذه الميزة»، وهذا أسلوب خاطئ، فالصواب أن تُصاغ الجملة على هيئة استفهام، فتكون: «أتُفعَّل هذه الميزة أم تُعطَّل؟».<sup><a href="https://archive.ph/ZpotO"><small>[م3]</small></a></sup>
 
 ## التاريخ والوقت
 يستخدم جنوم دالة ```g_date_time_format``` لتوطين التاريخ والوقت، وهي تعتمد على متغيِّرات تنسيق مستمدة من ```strftime()``` لتحقيق ذلك. ستجد أدناه جدول التحويلات الذي ينبغي استخدامه عند الترجمة إلى اللغة العربية.
 
-تذكر أنه يجب إجراء بعض التعديلات الأخرى، كتغيير مواضع الحقول واستخدام الفاصلة الصحيحة. على سبيل المثال، تُحوَّل الصيغة <span dir="ltr">```%a %b %e, %l:%M:%S %p```</span> إلى <span dir="ltr">```%A، %Oe %Ob، %Ol:%OM:%OS %P```</span> (لاحظ استخدام الفاصلة العربية ،).<sup><a href="https://archive.ph/h7I8Q#selection-125.0-125.4"><small>[م5]</small></a></sup>
+تذكر أنه يجب إجراء بعض التعديلات الأخرى، كتغيير مواضع الحقول واستخدام الفاصلة الصحيحة. على سبيل المثال، تُحوَّل الصيغة <span dir="ltr">```%a %b %e, %l:%M:%S %p```</span> إلى <span dir="ltr">```%A، %Oe %Ob، %Ol:%OM:%OS %P```</span> (لاحظ استخدام الفاصلة العربية ،).<sup><a href="https://archive.ph/h7I8Q#selection-125.0-125.4"><small>[م4]</small></a></sup>
 
 | الرمز | مقابله عند الترجمة        | الوصف                                                              | أمثلة |
 |-------------|----------------|--------------------------------------------------------------------|----|
@@ -108,11 +99,31 @@
 
 تستعمل بعض البرمجيات محرف النسبة «∶» (```U+2236 RATIO```) في التوقيت، ويلزم استبداله بمحرف النقطتين الرأسيتين «:» (```U+003A COLON```) وإلا فسيظهر التوقيت من اليمين إلى اليسار.
 
+## مقترحات لم تخضع للنقاش
+!!! warning "تجريبي"
+
+    ما يُعرض في هذا القسم تجريبي، ولم يخضع للنقاش حتى يُعتمد.
+
+### مربع حوار التحذير «Alert Dialog»
+تَعرض **مربعات حوار التحذير** رسالة أو سؤالًا مصحوبة بما بين زر واحد وثلاثة أزرار للاستجابة، وتستخدم عندما يكون من الضروري أن يرى المستخدم رسالة ما ويستجيب لها. في مربعات الحوار هذه، المستخدم هو القائم بالفعل وليست البرمجية بذاتها، لذا ينبغي أن تُوجَّه إليه الاستفهاماتُ بصيغة المخاطب: «ستفعلُ كذا؟»، وليس بصيغة المتكلم: «أأفعل كذا؟».<sup><a href="https://bethaitman.com/posts/ui-writing/confirmation/"><small>[م5]</small></a></sup>
+
+| <p style="text-align:center;">اللغة الإنجليزية</p> | <p style="text-align:center;">اللغة العربية (صيغة المتكلم) ❌</p> | <p style="text-align:center;">اللغة العربية (صيغة المخاطب) ☑️</p> |
+|---------------|---------------|---------------|
+| ![](/resources/projects/gnome/guidelines/save-dialog-1-en-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-1-en-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-2-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-2-ar-light.png#only-light) | ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-dark.png#only-dark) ![](/resources/projects/gnome/guidelines/save-dialog-3-ar-light.png#only-light) |
+| <p style="text-align:center;"><span dir="ltr">Save Changes?</span></p> | <p style="text-align:center;">أأحفظ التغييرات؟</p> | <p style="text-align:center;">سَتَحفَظُ التغييرات؟</p> |
+
+### أسماء التطبيقات
+التطبيقات ذات الأسماء العامة (مثل Files) مُعرَّفة دائمًا غير مُشكَّلة (فنقول «الملفات»)، والأسماء التي لا تترجم تكتب كما تنطق بغير تشكيل (مثل تطبيق Lollypop فنسميه «لولي بوب»).
+
+## جمل الحالة
+ويُقصد بها الجمل التي تظهر في البرمجية أثناء إنجاز عمل ما، وقد تُدوول على استخدام صيغة «إنجاز الأمر جارٍ» بين العرب لهذه الجمل. صيغة «المضارعة» أكثر بلاغة لهذه المعارض، وهذا يجعل جملة مثل "Loading..."، تُترجم إلى "تُحمَّل..."، وهي حينها تكون عائدة على البيانات (أي أن «بيانات البرمجية تُحمَّل»).<sup><a href="http://archive.today/2025.09.16-154717/https://web.archive.org/web/20241209130051/https://www.arabeyes.org/%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1_%D8%A7%D9%84%D8%AA%D8%B1%D8%AC%D9%85%D8%A9"><small>[م6]</small></a></sup>
+
 ## المراجع
 <ol>
-  <li><a href="https://bethaitman.com/posts/ui-writing/confirmation/">Are you sure? How to write a confirmation dialog - Beth Aitman</a></li>
   <li><a href="https://developer.gnome.org/hig/patterns/controls/switches.html">Switches - GNOME Human Interface Guidelines</a></li>
   <li><a href="https://developer.gnome.org/hig/patterns/controls/buttons.html">Buttons - GNOME Human Interface Guidelines</a></li>
   <li><a href="https://archive.ph/ZpotO">لسان عربي – نزار شهاب الدين</a></li>
   <li><a href="https://archive.ph/h7I8Q#selection-125.0-125.4">Misc Gnome Stuff - Arabeyes Wiki</a></li>
+  <li><a href="https://bethaitman.com/posts/ui-writing/confirmation/">Are you sure? How to write a confirmation dialog - Beth Aitman</a></li>
+  <li><a href="http://archive.today/2025.09.16-154717/https://web.archive.org/web/20241209130051/https://www.arabeyes.org/%D9%85%D8%B9%D8%A7%D9%8A%D9%8A%D8%B1_%D8%A7%D9%84%D8%AA%D8%B1%D8%AC%D9%85%D8%A9">معايير الترجمة – ويكي عربآيز</a></li>
 </ol> 
